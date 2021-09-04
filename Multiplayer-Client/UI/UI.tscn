@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/UI.gd" type="Script" id=1]
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Search" type="Button" parent="."]
+margin_left = 499.044
+margin_top = 261.629
+margin_right = 553.044
+margin_bottom = 281.629
+text = "Search"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Text" type="Label" parent="."]
+margin_left = 503.46
+margin_top = 210.718
+margin_right = 543.46
+margin_bottom = 224.718
+text = "Idle"
+
+[node name="Username" type="LineEdit" parent="."]
+margin_left = 198.484
+margin_top = 138.982
+margin_right = 357.484
+margin_bottom = 162.982
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="."]
+margin_left = 249.615
+margin_top = 84.0949
+margin_right = 289.615
+margin_bottom = 98.0949
+text = "Username
+"
+
+[connection signal="pressed" from="Search" to="." method="_on_Search_pressed"]
